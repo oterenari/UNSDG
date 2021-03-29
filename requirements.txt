@@ -3,3 +3,4 @@ pytrends
 matplotlib
 sklearn 
 seaborn
+streamlit_lottie
