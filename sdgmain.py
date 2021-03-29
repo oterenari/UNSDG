@@ -4,7 +4,6 @@ import requests
 # working with sample data.
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
 from pytrends.request import TrendReq
 from streamlit_lottie import st_lottie
