@@ -14,13 +14,13 @@ from sklearn.ensemble import RandomForestClassifier
 #Stats used for the questionnaire: https://www.afd.fr/en/ressources/quiz-better-understanding-sustainable-development-goals-sdgs
 ################
 
-uploaded_file = st.file_uploader("Choose a XLSX file", type="xlsx")
+#uploaded_file = st.file_uploader("Choose a XLSX file", type="xlsx")
 
-if uploaded_file:
-    df = pd.read_excel(uploaded_file)
+#if uploaded_file:
+    #df = pd.read_excel(uploaded_file)
 
-    st.dataframe(df)
-    st.table(df)
+    #st.dataframe(df)
+    #st.table(df)
 
 pytrend = TrendReq()
 
@@ -99,7 +99,7 @@ st.text("")
 
 st.markdown("<h1 style='text-align: center; color: black;'>Zero Hunger</h1>", unsafe_allow_html=True)
 #q2 = st.slider('How personal is this to you?', 0, 5, key="2")
-#op2 = pytrend.build_payload(kw_list=["Hunger"])
+op2 = pytrend.build_payload(kw_list=["Hunger"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
 with st.beta_expander("Read about the SDG",expanded=False):
@@ -145,7 +145,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 ###################################
 
 st.markdown("<h1 style='text-align: center; color: black;'>Good Health and Well-being</h1>", unsafe_allow_html=True)
-##op3 = pytrend.build_payload(kw_list=["Good Health"])
+op3 = pytrend.build_payload(kw_list=["Good Health"])
 st.write("")
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
@@ -188,7 +188,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 ######################################################################
 
 st.markdown("<h1 style='text-align: center; color: black;'>Quality Education</h1>", unsafe_allow_html=True)
-#op4 = pytrend.build_payload(kw_list=["Quality Education"])
+op4 = pytrend.build_payload(kw_list=["Quality Education"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
 with st.beta_expander("Read about the SDG",expanded=False):
@@ -228,7 +228,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 ###########################################################################################
 st.markdown("<h1 style='text-align: center; color: black;'>Gender Equality</h1>", unsafe_allow_html=True)
-##op5 = pytrend.build_payload(kw_list=["Gender Equality"])
+op5 = pytrend.build_payload(kw_list=["Gender Equality"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
@@ -276,7 +276,7 @@ st.text("")
 
 st.markdown("<h1 style='text-align: center; color: black;'>Clean Water and Sanitation</h1>", unsafe_allow_html=True)
 #st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-06_resized.jpg")
-#op6 = pytrend.build_payload(kw_list=["Sanitation","Clean Water"])
+op6 = pytrend.build_payload(kw_list=["Sanitation","Clean Water"])
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
@@ -317,7 +317,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Affordable and Clean Energy</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op6 = pytrend.build_payload(kw_list=["Clean Energy","Affordablce"])
+op7 = pytrend.build_payload(kw_list=["Clean Energy","Affordablce"])
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
@@ -359,7 +359,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Decent Work and Economic Growth</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Decent Work","Economic Growth"])
+op8 = pytrend.build_payload(kw_list=["Decent Work","Economic Growth"])
 
 st.write("")
 
@@ -403,7 +403,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Industry, Innovation and Infrastructure</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Industry","Innovation"])
+op9 = pytrend.build_payload(kw_list=["Industry","Innovation"])
 
 st.write("")
 
@@ -453,7 +453,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Reducing Inequalities</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Inequality"])
+op10 = pytrend.build_payload(kw_list=["Inequality"])
 
 st.write("")
 
@@ -502,7 +502,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Sustainable Cities and Communities</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Sustainable Cities"])
+op11 = pytrend.build_payload(kw_list=["Sustainable Cities"])
 
 st.write("")
 
@@ -551,7 +551,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Responsible Consumption and Production</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Responsible Consumption"])
+op12 = pytrend.build_payload(kw_list=["Responsible Consumption"])
 
 st.write("")
 
@@ -600,7 +600,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Climate Action</h1>", unsafe_allow_html=True)
 
 st.write("")
-#sop8 = pytrend.build_payload(kw_list=["Climate"])
+op13 = pytrend.build_payload(kw_list=["Climate"])
 
 st.write("")
 
@@ -650,7 +650,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Life Below Water</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Life Below Water"])
+op14 = pytrend.build_payload(kw_list=["Life Below Water"])
 
 st.write("")
 
@@ -694,7 +694,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Life on Land</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Life Below Water"])
+op15 = pytrend.build_payload(kw_list=["Life Below Water"])
 
 st.write("")
 
@@ -741,7 +741,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Peace, Justice and Strong</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Life Below Water"])
+op16 = pytrend.build_payload(kw_list=["Life Below Water"])
 
 st.write("")
 
@@ -788,7 +788,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 st.markdown("<h1 style='text-align: center; color: black;'>Partnerships for the Goals</h1>", unsafe_allow_html=True)
 
 st.write("")
-#op8 = pytrend.build_payload(kw_list=["Life Below Water"])
+op17 = pytrend.build_payload(kw_list=["Life Below Water"])
 
 st.write("")
 
