@@ -170,14 +170,14 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i)  MAIN CAUSE OF MORTALITY IN THE WORLD - An unhealthy environment")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="7")
+q7 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="7")
 
 st.write("(ii) MAIN CAUSE OF CHILD MORTALITY IN DEVELOPING COUNTRIES - Malnutrition")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="8")
+q8 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="8")
 
 
 st.write("(iii) In most countries, climate change will negatively influence air and water quality, the amount of food and safety of housing.")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="9")
+q9 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="9")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -212,14 +212,14 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) 2 in 10 ADULTS ARE UNABLE TO READ AND WRITE AROUND THE WORLD")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="10")
+q10 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="10")
 
 st.write("(ii) 66 million children (= population of France) CHILDREN IN DEVELOPING COUNTRIES GO TO SCHOOL ON AN EMPTY STOMACH")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="11")
+q11 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="11")
 
 
 st.write("(iii) 1 in 15 children AND YOUNG PEOPLE IN THEWORLD SUFFER VIOLENCE OR HARASSMENT AT SCHOOL")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="12")
+q12 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="12")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -257,13 +257,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) ACCORDING TO THE WORLD ECONOMIC FORUM, GENDER INEQUALITIES AT WORK WILL NOT DISAPPEAR UNTIL 2234")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="13")
+q13 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="13")
 
 st.write("(ii) PERCENTAGE OF RESEARCHERS WHO ARE WOMEN, ARE ONLY 29%")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="14")
+q14 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="14")
 
 st.write("(iii) Two-thirds OF THE 815 MILLION PEOPLE UNABLE TO READ OR WRITE IN THE WORLD, ARE WOMEN")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="15")
+q15 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="15")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -298,13 +298,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) Less than 3% OF THE WORLD’S WATER IS FRESH")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="16")
+q16 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="16")
 
 st.write("(ii) 1 in 3 people  DO NOT HAVE ACCESS TO CLEAN AND SANITARY TOILETS")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="17")
+q17 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="17")
 
 st.write("(iii) 90% OF WASTEWATER FROM HUMAN ACTIVITY is discharged back into the rivers and seas without being treated")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="18")
+q18 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="18")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -341,13 +341,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) HUMANKIND GENERATES BETWEEN 80 to 130 tonnes of waste per second")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="19")
+q19 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="19")
 
 st.write("(ii) 1.3 billion (or the population of China). DO NOT HAVE ACCESS TO ELECTRICITY IN THE WORLD")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="20")
+q20 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="20")
 
 st.write("(iii) 200 million (or 3% of the world’s population) UNEMPLOYED")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="21")
+q21 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="21")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -385,13 +385,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) ONE WORKER DIES FROM A WORK-RELATED ACCIDENT OR DISEASE EVERY 15 SECONDS - Occupational disease")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="22")
+q22 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="22")
 
 st.write("(ii) GLOBAL RATE OF EMPLOYMENT FOR DISABLED PEOPLE IS Lower than that of able-bodied people")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="23")
+q23 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="23")
 
 st.write("(iii) 30 million JOBS NEED TO BE CREATED EACH YEAR TO KEEP UP WITH THE GROWTH IN THE WORLD’S ACTIVE POPULATION")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="24")
+q24 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="24")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -435,13 +435,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) 95% OF THE POPULATION IN DEVELOPING COUNTRIES HAS NO INTERNET ACCESS")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="25")
+q25 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="25")
 
 st.write("(ii) BETWEEN 1 AND 1.5 BILLION PEOPLE TODAY HAVE NO ACCESS TO RELIABLE TELECOMMUNICATIONS SERVICES")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="26")
+q26 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="26")
 
 st.write("(iii) IN LOW-INCOME COUNTRIES, INFRASTRUCTURE CONSTRAINTS AFFECT COMPANY PRODUCTIVITY BY NEARLY 40%")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="27")
+q27 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="27")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -485,13 +485,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) 75% OF THE POPULATION LIVE IN SOCIETIES WHERE INCOMES ARE MORE UNEQUALLY DISTRIBUTED THAN IN THE 1990s")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="28")
+q28 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="28")
 
 st.write("(ii) WOMEN IN URBAN AREAS ARE Three times less likely to die during childbirth than those living in rural areas")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="29")
+q29 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="29")
 
 st.write("(iii) 83% OF DOMESTIC WORKERS AROUND THE WORLD ARE WOMEN")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="30")
+q30 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="30")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -532,13 +532,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) BY 2030, IF NOTHING IS DONE 3 billion, or 1 in 5 people WILL BE LIVING IN SHANTY TOWNS")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="31")
+q31 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="31")
 
 st.write("(ii) RAPID URBANIZATION PUTS PRESSURE ON Economic growth")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="32")
+q32 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="32")
 
 st.write("(iii) 1 in 8 people  LIVE IN SHANTY TOWNS AROUND THE WORLD")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="33")
+q33 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="33")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -583,13 +583,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) One-third of all food produced IS WASTED OR THROWN AWAY")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="34")
+q34 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="34")
 
 st.write("(ii) 250 km3 OF WATER ARE USED UNNECESSARILY EACH YEAR IN THE PRODUCTION OF WASTED FOOD")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="35")
+q35 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="35")
 
 st.write("(iii) IF THE ENTIRE WORLD POPULATION WERE TO USE ENERGY-EFFICIENT LIGHT BULBS, WE WOULD SAVE 120 billion dollars a year")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="36")
+q36 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="36")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -632,13 +632,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) WITHOUT GREENHOUSE GASES,THE TEMPERATURE WOULD BE -19C")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="37")
+q37 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="37")
 
 st.write("(ii) SINCE 1979, SEA ICE HAS DIMINISHED BY 1 million km2 each decade (or 100,000 football pitches)")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="38")
+q38 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="38")
 
 st.write("(iii) SINCE 1990, GLOBAL CARBON DIOXIDE (CO2)EMISSIONS HAVE INCREASED BY ALMOST 50%")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="39")
+q39 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="39")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -676,13 +676,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) AT THE CURRENT RATE, THERE WILL BE MORE PLASTIC IN THE OCEANS THAN FISH BY 2050")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="40")
+q40 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="40")
 
 st.write("(ii) More than 3 billion PEOPLE DEPEND ON MARINE BIODIVERSITY FOR THEIR LIVELIHOODS?)")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="41")
+q41 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="41")
 
 st.write("(iii) 80% OF COMMERCIAL FISHERIES ARE OVER OR FULLY EXPLOITED")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="42")
+q42 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="42")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -723,13 +723,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) 13 million hectares (15 million football pitches) HECTARES OF FOREST ARE DISAPPEARING EVERY YEAR")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="43")
+q43 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="43")
 
 st.write("(ii) 1 in 5  PEOPLE RELY ON FORESTS FOR THEIR LIVELIHOOD AROUND THE WORLD)")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="44")
+q44 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="44")
 
 st.write("(iii)  OF ALL KNOWN ANIMAL SPECIES… 8% are already extinct and 22% are facing extinction")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="45")
+q45 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="45")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -770,13 +770,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) Justice and the police INSTITUTIONS ARE MOST AFFECTED BY CORRUPTION IN THE WORLD")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="46")
+q46 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="46")
 
 st.write("(ii) 1 in 9, or 230 million children LIVE IN REGIONS THREATENED BY CONFLICT)")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="47")
+q47 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="47")
 
 st.write("(iii) 1 in 2 CHILDREN AGED 6 TO 17 LIVE IN A COUNTRY WHERE CORPORAL PUNISHMENT IS NOT COMPLETELY BANNED IN SCHOOL")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="48")
+q48 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="48")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -820,13 +820,13 @@ st.subheader("Here are some stats that are related to this SDG")
 st.text("")
 
 st.write("(i) DEVELOPMENT ASSISTANCE is Financial assistance from the richest to the poorest countries")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="49")
+q49 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="49")
 
 st.write("(ii) SINCE 2009, THE NUMBER OF WEB USERS IN THE DEVELOPING COUNTRIES HAS More than doubled)")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="50")
+q50 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="50")
 
 st.write("(iii) EUR 800 billion IS DIVERTED EACH YEAR FROM THE DEVELOPING COUNTRIES TO THE COUNTRIES OF THE NORTH")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="51")
+q51 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="51")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
