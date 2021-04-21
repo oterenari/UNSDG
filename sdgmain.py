@@ -99,7 +99,7 @@ st.text("")
 
 st.markdown("<h1 style='text-align: center; color: black;'>Zero Hunger</h1>", unsafe_allow_html=True)
 #q2 = st.slider('How personal is this to you?', 0, 5, key="2")
-op2 = pytrend.build_payload(kw_list=["Hunger"])
+op2 = pytrends.build_payload(kw_list=["Hunger"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
 with st.beta_expander("Read about the SDG",expanded=False):
