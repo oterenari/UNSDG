@@ -33,7 +33,7 @@ lottie_json2 = load_lottieurl(lottie_url2)
 lottie_url3 = "https://assets9.lottiefiles.com/private_files/lf30_z1sghrbu.json"
 lottie_json3 = load_lottieurl(lottie_url3)
 
-data_df = pd.read_csv('https://raw.githubusercontent.com/oterenari/UNSDG/main/Data3.csv')
+data_df = pd.read_csv("/Users/macbookpro/Downloads/Data3.csv")
 
 
 
@@ -70,8 +70,15 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write(
     "For those who work, having a job does not guarantee a decent living. In fact, 8 per cent of employed workers and their families worldwide lived in extreme poverty in 2018. One out of five children live in extreme poverty. Ensuring social protection for all children and other vulnerable groups is critical to reduce poverty.")
-
     st.text("")
+
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11gbmp432x")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=%2Fg%2F11gbmp432x")
+
+    
 
 
 st.text("")
@@ -141,6 +148,13 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.write("At the same time, a profound change of the global food and agriculture system is needed if we are to nourish the more than 690 million people who are hungry today – and the additional 2 billion people the world will have by 2050. Increasing agricultural productivity and sustainable food production are crucial to help alleviate the perils of hunger.")
 
     st.text("")
+
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11fz0w8dfs")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=%2Fg%2F11fz0w8dfs")
+
   
 
 st.text("")
@@ -180,6 +194,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Health emergencies such as COVID-19 pose a global risk and have shown the critical need for preparedness. The United Nations Development Programme highlighted huge disparities in countries’ abilities to cope with and recover from the COVID-19 crisis. The pandemic provides a watershed moment for health emergency preparedness and for investment in critical 21st century public services. ")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=health%20and%20well%20being")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=health%20and%20well%20being")
 
 
 st.text("")
@@ -219,6 +238,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Never before have so many children been out of school at the same time, disrupting learning and upending lives, especially the most vulnerable and marginalised. The global pandemic has far-reaching consequences that may jeopardize hard won gains made in improving global education.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=174&geo=US&q=education")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=174&q=education")
  
 
 st.text("")
@@ -261,6 +285,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The pandemic has also led to a steep increase in violence against women and girls. With lockdown measures in place, many women are trapped at home with their abusers, struggling to access services that are suffering from cuts and restrictions. Emerging data shows that, since the outbreak of the pandemic, violence against women and girls – and particularly domestic violence – has intensified.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=gender%20equality")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=gender%20equality")
  
 
 st.text("")
@@ -298,6 +327,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The COVID-19 pandemic has demonstrated the critical importance of sanitation, hygiene and adequate access to clean water for preventing and containing diseases. Hand hygiene saves lives. According to the World Health Organization, handwashing is one of the most effective actions you can take to reduce the spread of pathogens and prevent infections, including the COVID-19 virus. Yet billions of people still lack safe water sanitation, and funding is inadequate.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=sanitation")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=sanitation")
     
 
 
@@ -338,6 +372,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The Energy Progress Report provides global dashboard to register progress on energy access, energy efficiency and renewable energy. It assesses the progress made by each country on these three pillars and provides a snapshot of how far we are from achieving the 2030 Sustainable Development Goals targets.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=Affordable%20and%20Clean%20Energy")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=Affordable%20and%20Clean%20Energy")
 
 
 
@@ -379,6 +418,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Even before the outbreak of COVID-19, one in five countries – home to billions of people living in poverty – were likely to see per capita incomes stagnate or decline in 2020. Now, the economic and financial shocks associated with COVID-19—such as disruptions to industrial production, falling commodity prices, financial market volatility, and rising insecurity—are derailing the already tepid economic growth and compounding heightened risks from other factors.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=Economic%20Growth")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=Economic%20Growth")
 
 
 
@@ -426,6 +470,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The coronavirus pandemic has revealed the urgent need for resilient infrastructure. The Asian Development Bank notes that critical infrastructure in the region remains far from adequate in many countries, despite the rapid economic growth and development the region has experienced over the past decade. The Economic and Social Survey of Asia and the Pacific highlights that making infrastructure resilient to disasters and climate change will require an additional investment of $434 billion per year. This sum may need to be even greater in some subregions, such as the Pacific small island developing states.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=Industry,innovation,infrastructure")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=Industry,innovation,infrastructure")
 
 
 
@@ -473,6 +522,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Inequalities are also deepening for vulnerable populations in countries with weaker health systems and those facing existing humanitarian crises. Refugees and migrants, as well as indigenous peoples, older persons, people with disabilities and children are particularly at risk of being left behind. And hate speech targeting vulnerable groups is rising.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=Inequalities")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=Inequalities")
 
 
 
@@ -517,6 +571,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The UN food agency, FAO, warned that hunger and fatalities could rise significantly in urban areas, without measures to ensure that poor and vulnerable residents have access to food.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=sustainable%20cities")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=sustainable%20cities")
 
 
 
@@ -565,6 +624,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Sustainable consumption and production can also contribute substantially to poverty alleviation and the transition towards low-carbon and green economies.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=consumption%20and%20production")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=consumption%20and%20production")
 
     
 
@@ -611,6 +675,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The Paris Agreement, adopted in 2015, aims to strengthen the global response to the threat of climate change by keeping a global temperature rise this century well below 2 degrees Celsius above pre-industrial levels. The agreement also aims to strengthen the ability of countries to deal with the impacts of climate change, through appropriate financial flows, a new technology framework and an enhanced capacity building framework.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=climate%20action")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=climate%20action")
 
   
 
@@ -652,6 +721,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Saving our ocean must remain a priority. Marine biodiversity is critical to the health of people and our planet. Marine protected areas need to be effectively managed and well-resourced and regulations need to be put in place to reduce overfishing, marine pollution and ocean acidification.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11fz0z1c7s")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?q=%2Fg%2F11fz0z1c7s")
 
   
 
@@ -695,6 +769,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("The health of our planet also plays an important role in the emergence of zoonotic diseases, i.e. diseases that are transmissible between animals and humans. As we continue to encroach on fragile ecosystems, we bring humans into ever-greater contact with wildlife, enabling pathogens in wildlife to spill over to livestock and humans, increasing the risk of disease emergence and amplification.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=life%20on%20land")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=life%20on%20land")
 
 
 
@@ -738,6 +817,11 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("And the births of around one in four children under age 5 worldwide are never officially recorded, depriving them of a proof of legal identity crucial for the protection of their rights and for access to justice and social services.")
     st.text("")
+    st.header("Explore the related trending topics")
+    st.subheader("In the United States:")
+    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=peace%20and%20justice")
+    st.subheader("Worldwide:")
+    st.write("https://trends.google.com/trends/explore?cat=14&q=peace%20and%20justice")
 
 
 
@@ -784,6 +868,7 @@ with st.beta_expander("Read about the SDG",expanded=False):
     st.text("")
     st.write("Strong international cooperation is needed now more than ever to ensure that countries have the means to recover from the pandemic, build back better and achieve the Sustainable Development Goals.")
     st.text("")
+    
 
 
 
@@ -885,8 +970,7 @@ if analyze_button:
         fo1 = np.where(user1_data)[0]
         fo2 = np.where(user2_data)[0]
         fo3 = np.where(user3_data)[0]
-
-
+ 
         st.write(fo1)
         st.write("")
         st.write(fo2)
