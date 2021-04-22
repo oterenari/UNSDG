@@ -33,7 +33,7 @@ lottie_json2 = load_lottieurl(lottie_url2)
 lottie_url3 = "https://assets9.lottiefiles.com/private_files/lf30_z1sghrbu.json"
 lottie_json3 = load_lottieurl(lottie_url3)
 
-data_df = pd.read_csv("/Users/macbookpro/Downloads/Data3.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/oterenari/UNSDG/main/Data3.csv')
 
 
 
