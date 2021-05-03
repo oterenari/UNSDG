@@ -33,7 +33,7 @@ lottie_json2 = load_lottieurl(lottie_url2)
 lottie_url3 = "https://assets9.lottiefiles.com/private_files/lf30_z1sghrbu.json"
 lottie_json3 = load_lottieurl(lottie_url3)
 
-data_df = pd.read_csv('https://raw.githubusercontent.com/oterenari/UNSDG/main/Data3.csv')
+data_df = pd.read_csv('https://raw.githubusercontent.com/oterenari/UNSDG/main/Data4.csv')
 
 
 st.markdown("<h1 style='text-align: center; color: Black;'>UN SDG Recommendation Application</h1>", unsafe_allow_html=True)
