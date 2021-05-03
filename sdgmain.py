@@ -966,17 +966,20 @@ if analyze_button:
         #st.write(user2_data)
         user3_data = left.loc[user3,:]
         #st.write(user3_data)
-        st.write("Set 1")
+        
         fo1 = np.where(user1_data)[0]
-        st.write("Set 2")
+        
         fo2 = np.where(user2_data)[0]
-        st.write("Set 3")
+        
         fo3 = np.where(user3_data)[0]
  
+        st.write("Set 1")
         st.write(fo1)
         st.write("")
+        st.write("Set 2")
         st.write(fo2)
         st.write("")
+        st.write("Set 3")
         st.write(fo3)
 
         st.subheader('Key:')
