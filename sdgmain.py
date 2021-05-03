@@ -950,17 +950,15 @@ if analyze_button:
         distances, indices = neigh.kneighbors(X_test)
 
         #st.write([y_train[i] for i in indices[0]])
-        st.title("Your top 3 recommendations are:")
+        st.title("Your top 3 recommendation sets are:")
         #st.write(indices[0])
-        user1 = indices[0][0]
-        user2 = indices[0][1]
-        user3 = indices[0][2]
-
-        #st.write(user1)
-        #st.write(user2)
-        #st.write(user3)
-
         
+        user1 = indices[0][0]
+        
+        user2 = indices[0][1]
+        
+        user3 = indices[0][2]
+       
         user1_data = left.loc[user1,:]
         #st.write(user1_data)
         #st.write(user1_data.shape)
@@ -968,9 +966,11 @@ if analyze_button:
         #st.write(user2_data)
         user3_data = left.loc[user3,:]
         #st.write(user3_data)
-
+        st.write("Set 1")
         fo1 = np.where(user1_data)[0]
+        st.write("Set 2")
         fo2 = np.where(user2_data)[0]
+        st.write("Set 3")
         fo3 = np.where(user3_data)[0]
  
         st.write(fo1)
