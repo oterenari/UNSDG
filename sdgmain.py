@@ -9,6 +9,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
 ################
+#Author: Jude Rayan
+#Class: CPX 4075
+################
 #References:
 
 #Details and Participating NGO Links for each SDG: https://www.un.org/sustainabledevelopment/
@@ -85,14 +88,14 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) 1 in 7 people live under extreme poverty")
-q1 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="1")
+q1 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="1")
 
 st.write("(ii) 1 in 7  people in the world are homeless or live in inadequate housing")
-q2 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="2")
+q2 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="2")
 
 
 st.write("(iii) 82% of the wealth created worldwide in 2017 benefited the richest 1%, but the poorest 50% got nothing.")
-q3 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="3")
+q3 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="3")
 
 
 arr1 = np.array([q1, q2, q3])
@@ -161,14 +164,14 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) 1 in 10 OF THE WORLD’S PEOPLE ARE HUNGRY")
-q4 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="4")
+q4 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="4")
 
 st.write("(ii) THE NUMBER OF HUNGRY PEOPLE IN THE WORLD HAS FALLEN SINCE 1990")
-q5 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="5")
+q5 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="5")
 
 
 st.write("(iii) TO FEED THE WORLD IN 2050, FOOD PRODUCTION WILL NEED TO INCREASE BY 70%")
-q6 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="6")
+q6 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="6")
 
 arr2 = np.array([q4, q5, q6])
 
@@ -205,14 +208,14 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) The main cause of mortality in the world is an unhealthy environment")
-q7 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="7")
+q7 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="7")
 
 st.write("(ii) The main cause of child mortality in developing countries is malnutrition")
-q8 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="8")
+q8 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="8")
 
 
 st.write("(iii) In most countries, climate change will negatively influence air and water quality, the amount of food and safety of housing.")
-q9 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="9")
+q9 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="9")
 
 arr3 = np.array([q7, q8, q9])
 
@@ -249,14 +252,14 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) 2 in 10 adults are unable to read and write around the world")
-q10 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="10")
+q10 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="10")
 
 st.write("(ii) 66 million children (= population of France) children in developing countries go to school on an empty stomach")
-q11 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="11")
+q11 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="11")
 
 
 st.write("(iii) 1 in 15 children and young people in the world suffer violence or harassment at school")
-q12 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="12")
+q12 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="12")
 
 arr4 = np.array([q10, q11, q12])
 
@@ -296,13 +299,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) According to the world economic forum, gender inequalities at work will not disappear until 2234")
-q13 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="13")
+q13 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="13")
 
 st.write("(ii) The percentage of researchers who are women, are only 29%")
-q14 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="14")
+q14 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="14")
 
 st.write("(iii) Two-thirds of the 815 million people unable to read or write in the world, are women")
-q15 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="15")
+q15 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="15")
 
 arr5 = np.array([q13, q14, q15])
 
@@ -339,13 +342,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) Less than 3% of the world’s water is fresh")
-q16 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="16")
+q16 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="16")
 
 st.write("(ii) 1 in 3 people do not have access to clean and sanitary toilets.")
-q17 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="17")
+q17 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="17")
 
 st.write("(iii) 90% of wastewater from human activity is discharged back into the rivers and seas without being treated")
-q18 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="18")
+q18 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="18")
 
 arr6 = np.array([q16, q17, q18])
 
@@ -384,13 +387,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) Humankind generates between 80 to 130 tonnes of waste per second")
-q19 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="19")
+q19 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="19")
 
 st.write("(ii) 1.3 billion people(or the population of China) do not have access to electricity in the world")
-q20 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="20")
+q20 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="20")
 
 st.write("(iii) 200 million people (or 3% of the world’s population) are unemployed")
-q21 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="21")
+q21 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="21")
 
 arr7 = np.array([q19, q20, q21])
 
@@ -430,13 +433,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) One worker dies from a work-related accident or disease every 15 seconds - occupational disease")
-q22 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="22")
+q22 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="22")
 
 st.write("(ii) Global rate of employment for disabled people is lower than that of able-bodied people")
-q23 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="23")
+q23 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="23")
 
 st.write("(iii) 30 million jobs need to be created each year to keep up with the growth in the world’s active population")
-q24 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="24")
+q24 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="24")
 
 arr8 = np.array([q22, q23, q24])
 
@@ -482,13 +485,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) 95% of the population in developing countries has no internet access")
-q25 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="25")
+q25 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="25")
 
 st.write("(ii) Between 1 and 1.5 billion people today, have no access to reliable telecommunications services")
-q26 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="26")
+q26 = st.slider('Rate this on a scale from 0 to 5', 0, 5, key="26")
 
 st.write("(iii) In low-income countries, infrastructure constraints affect company productivity by nearly 40%")
-q27 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="27")
+q27 = st.slider('Rate this on a scale from 0 to 5', 0, 5, key="27")
 
 arr9 = np.array([q25, q26, q27])
 
@@ -534,13 +537,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) 75% of the population live in societies where incomes are more unequally distributed than in the 1990s")
-q28 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="28")
+q28 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="28")
 
 st.write("(ii) Women in urban areas are three times less likely to die during childbirth than those living in rural areas")
-q29 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="29")
+q29 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="29")
 
 st.write("(iii) 83% of domestic workers around the world are women")
-q30 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="30")
+q30 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="30")
 
 arr10 = np.array([q28, q29, q30])
 
@@ -583,13 +586,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) By 2030, if nothing is done 3 billion, or 1 in 5 people will be living in shanty towns")
-q31 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="31")
+q31 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="31")
 
 st.write("(ii) Rapid urbanization puts pressure on economic growth")
-q32 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="32")
+q32 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="32")
 
 st.write("(iii) 1 in 8 people live in shanty towns around the world")
-q33 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="33")
+q33 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="33")
 
 arr11 = np.array([q31, q32, q33])
 
@@ -636,13 +639,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) One-third of all food produced is wasted or thrown away")
-q34 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="34")
+q34 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="34")
 
 st.write("(ii) 250 km3 of water are used unnecessarily each year in the production of wasted food")
-q35 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="35")
+q35 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="35")
 
 st.write("(iii) If the entire world population were to use energy-efficient light bulbs, we would save 120 billion dollars a year")
-q36 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="36")
+q36 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="36")
 
 arr12 = np.array([q34, q35, q36])
 
@@ -687,13 +690,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) Without greenhouse gases, the temperature would be -19c")
-q37 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="37")
+q37 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="37")
 
 st.write("(ii) Since 1979, sea ice has diminished by 1 million km2 each decade (or 100,000 football pitches)")
-q38 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="38")
+q38 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="38")
 
 st.write("(iii) Since 1990, global carbon dioxide (co2)emissions have increased by almost 50%")
-q39 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="39")
+q39 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="39")
 
 arr13 = np.array([q37, q38, q39])
 
@@ -733,13 +736,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i)  At the current rate, there will be more plastic in the oceans than fish by 2050")
-q40 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="40")
+q40 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="40")
 
 st.write("(ii) More than 3 billion people depend on marine biodiversity for their livelihoods")
-q41 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="41")
+q41 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="41")
 
 st.write("(iii) 80% of commercial fisheries are over or fully exploited")
-q42 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="42")
+q42 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="42")
 
 arr14 = np.array([q40, q41, q42])
 
@@ -781,13 +784,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) 13 million hectares (15 million football pitches) hectares of forest are disappearing every year")
-q43 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="43")
+q43 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="43")
 
 st.write("(ii) 1 in 5 people rely on forests for their livelihood around the world")
-q44 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="44")
+q44 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="44")
 
 st.write("(iii) Of all known animal species… 8% are already extinct and 22% are facing extinction")
-q45 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="45")
+q45 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="45")
 
 with st.beta_expander("What are some of the ways to get involved?"):
             st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
@@ -830,13 +833,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) Justice and the police institutions are most affected by corruption in the world")
-q46 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="46")
+q46 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="46")
 
 st.write("(ii) 1 in 9, or 230 million children live in regions threatened by conflict")
-q47 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="47")
+q47 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="47")
 
 st.write("(iii) 1 in 2 children aged 6 to 17 live in a country where corporal punishment is not completely banned in school")
-q48 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="48")
+q48 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="48")
 
 arr16 = np.array([q46, q47, q48])
 
@@ -878,13 +881,13 @@ st.subheader("Please rate the following facts:")
 st.text("")
 
 st.write("(i) Development assistance is financial assistance from the richest to the poorest countries")
-q49 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="49")
+q49 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="49")
 
 st.write("(ii) Since 2009, the number of web users in the developing countries has more than doubled")
-q50 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="50")
+q50 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="50")
 
 st.write("(iii) EUR 800 billion is diverted each year from the developing countries to the countries of the north")
-q51 = st.slider('Rate this on a scale from 1 to 5', 0, 5, key="51")
+q51 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="51")
 
 arr17 = np.array([q49, q50, q51])
 
