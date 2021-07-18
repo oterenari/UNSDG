@@ -1,4 +1,4 @@
-import streamlit as st
+""" import streamlit as st
 import requests
 import numpy as np
 import pandas as pd
@@ -18,6 +18,9 @@ from sklearn.neighbors import KNeighborsClassifier
 #Stats used for the questionnaire: https://www.afd.fr/en/ressources/quiz-better-understanding-sustainable-development-goals-sdgs
 ################
 
+##########
+#CITATION: “Quiz: Better Understanding the Sustainable Development Goals (SDGs).” AFD - Agence Française de Développement, Agence Française de Développement, Oct. 2017, www.afd.fr/en/ressources/quiz-better-understanding-sustainable-development-goals-sdgs.
+##########
 
 pytrend = TrendReq()
 
@@ -59,20 +62,40 @@ st_lottie(lottie_json2, key="2")
 st.header("Alright, so how do we use this tool?")
 st.write('Think about the facts that are presented. Answer the question based on, how aligned these facts/issues are, with your personal passion/ambitions. For example, if you really care about conditions of poverty, but you would play a more indirect role in supporting people who are actively engaged in trying to solve this issue, you would give a rating of 0. On the other hand, if you feel you are inclined to play a more direct role in helping solve these issues, you would rate that response with a 5.')
 
+st.header("Images/Logos and Sustainable Developmental Goal Description Credits:")
+st.write("UN Sustainable Goal Development 1 content derived from: https://www.un.org/sustainabledevelopment/poverty/")
+st.write("UN Sustainable Goal Development 2 content derived from: https://www.un.org/sustainabledevelopment/hunger/")
+st.write("UN Sustainable Goal Development 3 content derived from: https://www.un.org/sustainabledevelopment/health/")
+st.write("UN Sustainable Goal Development 4 content derived from: https://www.un.org/sustainabledevelopment/education/")
+st.write("UN Sustainable Goal Development 5 content derived from: https://www.un.org/sustainabledevelopment/gender-equality/")
+st.write("UN Sustainable Goal Development 6 content derived from: https://www.un.org/sustainabledevelopment/water-and-sanitation/")
+st.write("UN Sustainable Goal Development 7 content derived from: https://www.un.org/sustainabledevelopment/energy/")
+st.write("UN Sustainable Goal Development 8 content derived from: https://www.un.org/sustainabledevelopment/economic-growth/")
+st.write("UN Sustainable Goal Development 9 content derived from: https://www.un.org/sustainabledevelopment/infrastructure-industrialization/")
+st.write("UN Sustainable Goal Development 10 content derived from: https://www.un.org/sustainabledevelopment/inequality/")
+st.write("UN Sustainable Goal Development 11 content derived from: https://www.un.org/sustainabledevelopment/cities/")
+st.write("UN Sustainable Goal Development 12 content derived from: https://www.un.org/sustainabledevelopment/sustainable-consumption-production/")
+st.write("UN Sustainable Goal Development 13 content derived from: https://www.un.org/sustainabledevelopment/climate-change/")
+st.write("UN Sustainable Goal Development 14 content derived from: https://www.un.org/sustainabledevelopment/oceans/")
+st.write("UN Sustainable Goal Development 15 content derived from: https://www.un.org/sustainabledevelopment/biodiversity/")
+st.write("UN Sustainable Goal Development 16 content derived from: https://www.un.org/sustainabledevelopment/peace-justice/")
+st.write("UN Sustainable Goal Development 13 content derived from: https://www.un.org/sustainabledevelopment/globalpartnerships/")
+
+st.header("Questions for Survey:")
+st.text("Derived from: https://www.afd.fr/en/ressources/quiz-better-understanding-sustainable-development-goals-sdgs")
+
+
+
+
 
 #Maybe add locations where it is popular too
 ######################################################################################################################################################
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #1: No Poverty</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #1: No Poverty</h1>", unsafe_allow_html=True)
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Globally, the number of people living in extreme poverty declined from 36 per cent in 1990 to 10 per cent in 2015. But the pace of change is decelerating and the COVID-19 crisis risks reversing decades of progress in the fight against poverty. New research published by the UNU World Institute for Development Economics Research warns that the economic fallout from the global pandemic could increase global poverty by as much as half a billion people, or 8% of the total human population. This would be the first time that poverty has increased globally in thirty years, since 1990.") 
-    st.text("")
-    st.write("More than 700 million people, or 10 per cent of the world population, still live in extreme poverty today, struggling to fulfil the most basic needs like health, education, and access to water and sanitation, to name a few. The majority of people living on less than $1.90 a day live in sub-Saharan Africa. Worldwide, the poverty rate in rural areas is 17.2 per cent—more than three times higher than in urban areas.")  
-    st.text("")
-    st.write(
-    "For those who work, having a job does not guarantee a decent living. In fact, 8 per cent of employed workers and their families worldwide lived in extreme poverty in 2018. One out of five children live in extreme poverty. Ensuring social protection for all children and other vulnerable groups is critical to reduce poverty.")
-    st.text("")
+    st.write("Link: https://www.un.org/sustainabledevelopment/poverty/")
+
 
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
@@ -132,22 +155,15 @@ output_check = 0
 
 ####################################################################################################################################################################       
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #2: Zero Hunger</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #2: Zero Hunger</h1>", unsafe_allow_html=True)
 #q2 = st.slider('How personal is this to you?', 0, 5, key="2")
 #op2 = pytrend.build_payload(kw_list=["Hunger"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("After decades of steady decline, the number of people who suffer from hunger – as measured by the prevalence of undernourishment – began to slowly increase again in 2015. Current estimates show that nearly 690 million people are hungry, or 8.9 percent of the world population – up by 10 million people in one year and by nearly 60 million in five years.") 
-    st.text("")
-    st.write("The world is not on track to achieve Zero Hunger by 2030. If recent trends continue, the number of people affected by hunger would surpass 840 million by 2030.")  
-    st.text("")
-    st.write("According to the World Food Programme, 135 million suffer from acute hunger largely due to man-made conflicts, climate change and economic downturns. The COVID-19 pandemic could now double that number, putting an additional 130 million people at risk of suffering acute hunger by the end of 2020.")
-    st.text("")
-    st.write("With more than a quarter of a billion people potentially at the brink of starvation, swift action needs to be taken to provide food and humanitarian relief to the most at-risk regions.")
-    st.text("")
-    st.write("At the same time, a profound change of the global food and agriculture system is needed if we are to nourish the more than 690 million people who are hungry today – and the additional 2 billion people the world will have by 2050. Increasing agricultural productivity and sustainable food production are crucial to help alleviate the perils of hunger.")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/hunger/")
+
 
     st.text("")
 
@@ -183,19 +199,15 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 ###################################
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #3: Good Health and Well-being</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #3: Good Health and Well-being</h1>", unsafe_allow_html=True)
 ##op3 = pytrend.build_payload(kw_list=["Good Health"])
 st.write("")
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Ensuring healthy lives and promoting well-being at all ages is essential to sustainable development. Currently, the world is facing a global health crisis unlike any other — COVID-19 is spreading human suffering, destabilizing the global economy and upending the lives of billions of people around the globe")
-    st.text("")
-    st.write("Before the pandemic, major progress was made in improving the health of millions of people. Significant strides were made in increasing life expectancy and reducing some of the common killers associated with child and maternal mortality. But more efforts are needed to fully eradicate a wide range of diseases and address many different persistent and emerging health issues. By focusing on providing more efficient funding of health systems, improved sanitation and hygiene, and increased access to physicians, significant progress can be made in helping to save the lives of millions.")
-    st.text("")
-    st.write("Health emergencies such as COVID-19 pose a global risk and have shown the critical need for preparedness. The United Nations Development Programme highlighted huge disparities in countries’ abilities to cope with and recover from the COVID-19 crisis. The pandemic provides a watershed moment for health emergency preparedness and for investment in critical 21st century public services. ")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/health/")
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?geo=US&q=health%20and%20well%20being")
@@ -228,23 +240,13 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 ######################################################################
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #4: Quality Education</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #4: Quality Education</h1>", unsafe_allow_html=True)
 #op4 = pytrend.build_payload(kw_list=["Quality Education"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Education enables upward socioeconomic mobility and is a key to escaping poverty. Over the past decade, major progress was made towards increasing access to education and school enrollment rates at all levels, particularly for girls. Nevertheless, about 260 million children were still out of school in 2018 — nearly one fifth of the global population in that age group. And more than half of all children and adolescents worldwide are not meeting minimum proficiency standards in reading and mathematics. ")
-    st.text("")
-    st.write("In 2020, as the COVID-19 pandemic spread across the globe, a majority of countries announced the temporary closure of schools, impacting more than 91 per cent of students worldwide. By April 2020, close to 1.6 billion children and youth were out of school. And nearly 369 million children who rely on school meals needed to look to other sources for daily nutrition. ")
-    st.text("")
-    st.write("Never before have so many children been out of school at the same time, disrupting learning and upending lives, especially the most vulnerable and marginalised. The global pandemic has far-reaching consequences that may jeopardize hard won gains made in improving global education.")
-    st.text("")
-    st.header("Explore the related trending topics")
-    st.subheader("In the United States:")
-    st.write("https://trends.google.com/trends/explore?cat=174&geo=US&q=education")
-    st.subheader("Worldwide:")
-    st.write("https://trends.google.com/trends/explore?cat=174&q=education")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/education/")
  
 
 st.text("")
@@ -270,23 +272,14 @@ with st.beta_expander("What are some of the ways to get involved?"):
             st.write("https://sustainabledevelopment.un.org/partnerships/goal4/")
 
 ###########################################################################################
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #5: Gender Equality</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #5: Gender Equality</h1>", unsafe_allow_html=True)
 ##op5 = pytrend.build_payload(kw_list=["Gender Equality"])
 #st.write(pytrend.interest_by_region(resolution='COUNTRY', inc_low_vol=True, inc_geo_code=False))
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prosperous and sustainable world. ")
-    st.text("")
-    st.write("There has been progress over the last decades: More girls are going to school, fewer girls are forced into early marriage, more women are serving in parliament and positions of leadership, and laws are being reformed to advance gender equality. ")
-    st.text("")
-    st.write("Despite these gains, many challenges remain: discriminatory laws and social norms remain pervasive, women continue to be underrepresented at all levels of political leadership, and 1 in 5 women and girls between the ages of 15 and 49 report experiencing physical or sexual violence by an intimate partner within a 12-month period.")
-    st.text("")
-    st.write("The effects of the COVID-19 pandemic could reverse the limited progress that has been made on gender equality and women’s rights.  The coronavirus outbreak exacerbates existing inequalities for women and girls across every sphere – from health and the economy, to security and social protection. ")
-    st.text("")
-    st.write("Women play a disproportionate role in responding to the virus, including as frontline healthcare workers and carers at home. Women’s unpaid care work has increased significantly as a result of school closures and the increased needs of older people. Women are also harder hit by the economic impacts of COVID-19, as they disproportionately work in insecure labour markets. Nearly 60 per cent of women work in the informal economy, which puts them at greater risk of falling into poverty.")
-    st.text("")
-    st.write("The pandemic has also led to a steep increase in violence against women and girls. With lockdown measures in place, many women are trapped at home with their abusers, struggling to access services that are suffering from cuts and restrictions. Emerging data shows that, since the outbreak of the pandemic, violence against women and girls – and particularly domestic violence – has intensified.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/gender-equality/")
+    
+
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?geo=US&q=gender%20equality")
@@ -319,21 +312,14 @@ st.text("")
 
 ############################################################################
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #6: Clean Water and Sanitation</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #6: Clean Water and Sanitation</h1>", unsafe_allow_html=True)
 #st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-06_resized.jpg")
 #op6 = pytrend.build_payload(kw_list=["Sanitation","Clean Water"])
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("While substantial progress has been made in increasing access to clean drinking water and sanitation, billions of people—mostly in rural areas—still lack these basic services. Worldwide, one in three people do not have access to safe drinking water, two out of five people do not have a basic hand-washing facility with soap and water, and more than 673 million people still practice open defecation.")
-    st.text("")
-    st.write("The COVID-19 pandemic has demonstrated the critical importance of sanitation, hygiene and adequate access to clean water for preventing and containing diseases. Hand hygiene saves lives. According to the World Health Organization, handwashing is one of the most effective actions you can take to reduce the spread of pathogens and prevent infections, including the COVID-19 virus. Yet billions of people still lack safe water sanitation, and funding is inadequate.")
-    st.text("")
-    st.header("Explore the related trending topics")
-    st.subheader("In the United States:")
-    st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=sanitation")
-    st.subheader("Worldwide:")
-    st.write("https://trends.google.com/trends/explore?cat=14&q=sanitation")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/water-and-sanitation/")
+    
     
 
 
@@ -361,19 +347,15 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 ################################################################################################################
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #7: Affordable and Clean Energy</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #7: Affordable and Clean Energy</h1>", unsafe_allow_html=True)
 
 st.write("")
 #op6 = pytrend.build_payload(kw_list=["Clean Energy","Affordablce"])
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("The world is making progress towards Goal 7, with encouraging signs that energy is becoming more sustainable and widely available. Access to electricity in poorer countries has begun to accelerate, energy efficiency continues to improve, and renewable energy is making impressive gains in the electricity sector. ")
-    st.text("")
-    st.write("Nevertheless, more focused attention is needed to improve access to clean and safe cooking fuels and technologies for 3 billion people, to expand the use of renewable energy beyond the electricity sector, and to increase electrification in sub-Saharan Africa.")
-    st.text("")
-    st.write("The Energy Progress Report provides global dashboard to register progress on energy access, energy efficiency and renewable energy. It assesses the progress made by each country on these three pillars and provides a snapshot of how far we are from achieving the 2030 Sustainable Development Goals targets.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/energy/")
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?geo=US&q=Affordable%20and%20Clean%20Energy")
@@ -405,7 +387,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 
 ##############################################
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #8: Decent Work and Economic Growth</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #8: Decent Work and Economic Growth</h1>", unsafe_allow_html=True)
 
 st.write("")
 #op8 = pytrend.build_payload(kw_list=["Decent Work","Economic Growth"])
@@ -414,12 +396,9 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Sustained and inclusive economic growth can drive progress, create decent jobs for all and improve living standards. ")
-    st.text("")
-    st.write("COVID-19 has disrupted billions of lives and endangered the global economy. The International Monetary Fund (IMF) expects a global recession as bad as or worse than in 2009. As job losses escalate, the International Labor Organization estimates that nearly half of the global workforce is at risk of losing their livelihoods.")
-    st.text("")
-    st.write("Even before the outbreak of COVID-19, one in five countries – home to billions of people living in poverty – were likely to see per capita incomes stagnate or decline in 2020. Now, the economic and financial shocks associated with COVID-19—such as disruptions to industrial production, falling commodity prices, financial market volatility, and rising insecurity—are derailing the already tepid economic growth and compounding heightened risks from other factors.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/economic-growth/")
+    
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?geo=US&q=Economic%20Growth")
@@ -451,7 +430,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 
 ####################################################################################################
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #9: Industry, Innovation and Infrastructure</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #9: Industry, Innovation and Infrastructure</h1>", unsafe_allow_html=True)
 
 st.write("")
 #op8 = pytrend.build_payload(kw_list=["Industry","Innovation"])
@@ -460,18 +439,9 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Inclusive and sustainable industrialization, together with innovation and infrastructure, can unleash dynamic and competitive economic forces that generate employment and income. They play a key role in introducing and promoting new technologies, facilitating international trade and enabling the efficient use of resources. ")
-    st.text("")
-    st.write("However, the world still has a long way to go to fully tap this potential. Least developed countries, in particular, need to accelerate the development of their manufacturing sector if they are to meet the 2030 target, and scale up investment in scientific research and innovation. ")
-    st.text("")
-    st.write("Global manufacturing growth has been steadily declining, even before the outbreak of the COVID-19 pandemic. The pandemic is hitting manufacturing industries hard and causing disruptions in global value chains and the supply of products. ")
-    st.text("")
-    st.write("Innovation and technological progress are key to finding lasting solutions to both economic and environmental challenges, such as increased resource and energy-efficiency. Globally, investment in research and development (R&D) as a proportion of GDP increased from 1.5 per cent in 2000 to 1.7 per cent in 2015 and remained almost unchanged in 2017, but was only less than 1 per cent  in developing regions.")
-    st.text("")
-    st.write("In terms of communications infrastructure, more than half of the world’s population is now online and almost the entire world population lives in an area covered by a mobile network. It is estimated that in 2019, 96.5 per cent were covered by at least a 2G network.")
-    st.text("")
-    st.write("The coronavirus pandemic has revealed the urgent need for resilient infrastructure. The Asian Development Bank notes that critical infrastructure in the region remains far from adequate in many countries, despite the rapid economic growth and development the region has experienced over the past decade. The Economic and Social Survey of Asia and the Pacific highlights that making infrastructure resilient to disasters and climate change will require an additional investment of $434 billion per year. This sum may need to be even greater in some subregions, such as the Pacific small island developing states.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/infrastructure-industrialization/")
+    
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?geo=US&q=Industry,innovation,infrastructure")
@@ -503,7 +473,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 #######################################################################
 
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #10: Reducing Inequalities</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #10: Reducing Inequalities</h1>", unsafe_allow_html=True)
 
 st.write("")
 #op8 = pytrend.build_payload(kw_list=["Inequality"])
@@ -512,18 +482,8 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Reducing inequalities and ensuring no one is left behind are integral to achieving the Sustainable Development Goals.")
-    st.text("")
-    st.write("Inequality within and among countries is a persistent cause for concern. Despite some positive signs toward reducing inequality in some dimensions, such as reducing relative income inequality in some countries and preferential trade status benefiting lower-income countries, inequality still persists.")
-    st.text("")
-    st.write("COVID-19 has deepened existing inequalities, hitting the poorest and most vulnerable communities the hardest. It has put a spotlight on economic inequalities and fragile social safety nets that leave vulnerable communities to bear the brunt of the crisis.  At the same time, social, political and economic inequalities have amplified the impacts of the pandemic.")
-    st.text("")
-    st.write("On the economic front, the COVID-19 pandemic has significantly increased global unemployment and dramatically slashed workers’ incomes.")
-    st.text("")
-    st.write("COVID-19 also puts at risk the limited progress that has been made on gender equality and women’s rights over the past decades. Across every sphere, from health to the economy, security to social protection, the impacts of COVID-19 are exacerbated for women and girls simply by virtue of their sex.")
-    st.text("")
-    st.write("Inequalities are also deepening for vulnerable populations in countries with weaker health systems and those facing existing humanitarian crises. Refugees and migrants, as well as indigenous peoples, older persons, people with disabilities and children are particularly at risk of being left behind. And hate speech targeting vulnerable groups is rising.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/inequality/")
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=Inequalities")
@@ -554,7 +514,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
             st.write("https://sustainabledevelopment.un.org/partnerships/goal10/")
 
 ##################################################################################
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #11: Sustainable Cities and Communities</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #11: Sustainable Cities and Communities</h1>", unsafe_allow_html=True)
 
 st.write("")
 #op8 = pytrend.build_payload(kw_list=["Sustainable Cities"])
@@ -563,16 +523,9 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("The world is becoming increasingly urbanized. Since 2007, more than half the world’s population has been living in cities, and that share is projected to rise to 60 per cent by 2030.")
-    st.text("")
-    st.write("Cities and metropolitan areas are powerhouses of economic growth—contributing about 60 per cent of global GDP. However, they also account for about 70 per cent of global carbon emissions and over 60 per cent of resource use. ")
-    st.text("")
-    st.write("Rapid urbanization is resulting in a growing number of slum dwellers, inadequate and overburdened infrastructure and services (such as waste collection and water and sanitation systems, roads and transport), worsening air pollution and unplanned urban sprawl. ")
-    st.text("")
-    st.write("The impact of COVID-19 will be most devastating in poor and densely populated urban areas, especially for the one billion people living in informal settlements and slums worldwide, where overcrowding also makes it difficult to follow recommended measures such as social distancing and self-isolation. ")
-    st.text("")
-    st.write("The UN food agency, FAO, warned that hunger and fatalities could rise significantly in urban areas, without measures to ensure that poor and vulnerable residents have access to food.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/cities/")
+    
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=sustainable%20cities")
@@ -605,7 +558,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
 
 
 ########
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #12: Responsible Consumption and Production</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #12: Responsible Consumption and Production</h1>", unsafe_allow_html=True)
 
 st.write("")
 #op8 = pytrend.build_payload(kw_list=["Responsible Consumption"])
@@ -614,18 +567,9 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Worldwide consumption and production — a driving force of the global economy — rest on the use of the natural environment and resources in a way that continues to have destructive impacts on the planet. ")
-    st.text("")
-    st.write("Economic and social progress over the last century has been accompanied by environmental degradation that is endangering the very systems on which our future development — indeed, our very survival — depends. ")
-    st.text("")
-    st.write("A few facts and figures:Each year, an estimated one third of all food produced – equivalent to 1.3 billion tonnes worth around $1 trillion – ends up rotting in the bins of consumers and retailers, or spoiling due to poor transportation and harvesting practices. If people worldwide switched to energy efficient light bulbs the world would save US$120 billion annually. Should the global population reach 9.6 billion by 2050, the equivalent of almost three planets could be required to provide the natural resources needed to sustain current lifestyles.")
-    st.text("")
-    st.write("The COVID-19 pandemic offers countries an opportunity to build recovery plans that will reverse current trends and change our consumption and production patterns towards a more sustainable future.")
-    st.text("")
-    st.write("Sustainable consumption and production is about doing more and better with less. It is also about decoupling economic growth from environmental degradation, increasing resource efficiency and promoting sustainable lifestyles.")
-    st.text("")
-    st.write("Sustainable consumption and production can also contribute substantially to poverty alleviation and the transition towards low-carbon and green economies.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/sustainable-consumption-production/")
+    
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=consumption%20and%20production")
@@ -656,7 +600,7 @@ with st.beta_expander("What are some of the ways to get involved?"):
             st.write("https://sustainabledevelopment.un.org/partnerships/goal12/")
 
 ###################################
-st.markdown("<h1 style='text-align: center; color: green;'>SDG #13: Climate Action</h1>", unsafe_allow_html=True)
+#st.markdown("<h1 style='text-align: center; color: green;'>SDG #13: Climate Action</h1>", unsafe_allow_html=True)
 
 st.write("")
 #sop8 = pytrend.build_payload(kw_list=["Climate"])
@@ -665,18 +609,9 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("2019 was the second warmest year on record and the end of the warmest decade (2010- 2019) ever recorded. ")
-    st.text("")
-    st.write("Carbon dioxide (CO2) levels and other greenhouse gases in the atmosphere rose to new records in 2019. ")
-    st.text("")
-    st.write("Climate change is affecting every country on every continent. It is disrupting national economies and affecting lives. Weather patterns are changing, sea levels are rising, and weather events are becoming more extreme.")
-    st.text("")
-    st.write("Although greenhouse gas emissions are projected to drop about 6 per cent in 2020 due to travel bans and economic slowdowns resulting from the COVID-19 pandemic, this improvement is only temporary. Climate change is not on pause. Once the global economy begins to recover from the pandemic, emissions are expected to return to higher levels.")
-    st.text("")
-    st.write("Saving lives and livelihoods requires urgent action to address both the pandemic and the climate emergency")
-    st.text("")
-    st.write("The Paris Agreement, adopted in 2015, aims to strengthen the global response to the threat of climate change by keeping a global temperature rise this century well below 2 degrees Celsius above pre-industrial levels. The agreement also aims to strengthen the ability of countries to deal with the impacts of climate change, through appropriate financial flows, a new technology framework and an enhanced capacity building framework.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/climate-change/")
+    
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=climate%20action")
@@ -717,17 +652,8 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("2The ocean drives global systems that make the Earth habitable for humankind. Our rainwater, drinking water, weather, climate, coastlines, much of our food, and even the oxygen in the air we breathe, are all ultimately provided and regulated by the sea. ")
-    st.text("")
-    st.write("Careful management of this essential global resource is a key feature of a sustainable future. However, at the current time, there is a continuous deterioration of coastal waters owing to pollution, and ocean acidification is having an adversarial effect on the functioning of ecosystems and biodiversity. This is also negatively impacting small scale fisheries. ")
-    st.text("")
-    st.write("Saving our ocean must remain a priority. Marine biodiversity is critical to the health of people and our planet. Marine protected areas need to be effectively managed and well-resourced and regulations need to be put in place to reduce overfishing, marine pollution and ocean acidification.")
-    st.text("")
-    st.header("Explore the related trending topics")
-    st.subheader("In the United States:")
-    st.write("https://trends.google.com/trends/explore?geo=US&q=%2Fg%2F11fz0z1c7s")
-    st.subheader("Worldwide:")
-    st.write("https://trends.google.com/trends/explore?q=%2Fg%2F11fz0z1c7s")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/oceans/")
+    
 
   
 
@@ -763,14 +689,8 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Nature is critical to our survival: nature provides us with our oxygen, regulates our weather patterns, pollinates our crops, produces our food, feed and fibre. But it is under increasing stress. Human activity has altered almost 75 per cent of the earth’s surface, squeezing wildlife and nature into an ever-smaller corner of the planet.")
-    st.text("")
-    st.write("Around 1 million animal and plant species are threatened with extinction – many within decades – according to the 2019 Global Assessment Report on Biodiversity and Ecosystem Service. The report called for transformative changes to restore and protect nature. It found that the health of ecosystems on which we and all other species depend is deteriorating more rapidly than ever, affecting  the very foundations of our economies, livelihoods, food security, health and quality of life worldwide. ")
-    st.text("")
-    st.write("Deforestation and desertification – caused by human activities and climate change – pose major challenges to sustainable development and have affected the lives and livelihoods of millions of people. Forests are vitally important for sustaining life on Earth, and play a major role in the fight against climate change. And investing in land restoration is critical for improving livelihoods, reducing vulnerabilities, and reducing risks for the economy.")
-    st.text("")
-    st.write("The health of our planet also plays an important role in the emergence of zoonotic diseases, i.e. diseases that are transmissible between animals and humans. As we continue to encroach on fragile ecosystems, we bring humans into ever-greater contact with wildlife, enabling pathogens in wildlife to spill over to livestock and humans, increasing the risk of disease emergence and amplification.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/biodiversity/")
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=life%20on%20land")
@@ -811,14 +731,9 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("Conflict, insecurity, weak institutions and limited access to justice remain a great threat to sustainable development.")
-    st.text("")
-    st.write("The number of people fleeing war, persecution and conflict exceeded 70 million in 2018, the highest level recorded by the UN refugee agency (UNHCR) in almost 70 years")
-    st.text("")
-    st.write("In 2019, the United Nations tracked 357 killings and 30 enforced disappearances of human rights defenders, journalists and trade unionists in 47 countries.")
-    st.text("")
-    st.write("And the births of around one in four children under age 5 worldwide are never officially recorded, depriving them of a proof of legal identity crucial for the protection of their rights and for access to justice and social services.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/peace-justice/")
+    
+    
     st.header("Explore the related trending topics")
     st.subheader("In the United States:")
     st.write("https://trends.google.com/trends/explore?cat=14&geo=US&q=peace%20and%20justice")
@@ -860,16 +775,8 @@ st.write("")
 
 with st.beta_expander("Read about the SDG",expanded=False):
     st.subheader('Goal Description')
-    st.write("The SDGs can only be realized with strong global partnerships and cooperation.")
-    st.text("")
-    st.write("A successful development agenda requires inclusive partnerships — at the global, regional, national and local levels — built upon principles and values, and upon a shared vision and shared goals placing people and the planet at the centre.")
-    st.text("")
-    st.write("Many countries require Official Development Assistance to encourage growth and trade. Yet, aid levels are falling and donor countries have not lived up to their pledge to ramp up development finance.")
-    st.text("")
-    st.write("Due to the COVID-19 pandemic, the global economy is projected to contract sharply, by 3 per cent, in 2020, experiencing its worst recession since the Great Depression.")
-    st.text("")
-    st.write("Strong international cooperation is needed now more than ever to ensure that countries have the means to recover from the pandemic, build back better and achieve the Sustainable Development Goals.")
-    st.text("")
+    st.write("Link Description: https://www.un.org/sustainabledevelopment/globalpartnerships/")
+    
     
 
 
@@ -1016,3 +923,4 @@ if analyze_button:
 
 
 
+ """
