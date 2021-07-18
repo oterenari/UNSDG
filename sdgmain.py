@@ -1,5 +1,5 @@
 import streamlit as st
-""" 
+
 import requests
 import numpy as np
 import pandas as pd
@@ -87,7 +87,7 @@ st.text("Derived from: https://www.afd.fr/en/ressources/quiz-better-understandin
 
 
 
-
+"""
 
 #Maybe add locations where it is popular too
 ######################################################################################################################################################
@@ -127,7 +127,7 @@ arr1 = np.array([q1, q2, q3])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-01_resized.jpg", width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal1/")
 output_check = 0
@@ -194,7 +194,7 @@ arr2 = np.array([q4, q5, q6])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-02_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal2/")
 
@@ -234,7 +234,7 @@ arr3 = np.array([q7, q8, q9])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-03_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal3/")
 
@@ -268,7 +268,7 @@ arr4 = np.array([q10, q11, q12])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-04_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal4/")
 
@@ -305,7 +305,7 @@ arr5 = np.array([q13, q14, q15])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-05_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal5/")
 
@@ -341,7 +341,7 @@ arr6 = np.array([q16, q17, q18])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-06_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal6/")
 
@@ -382,7 +382,7 @@ arr7 = np.array([q19, q20, q21])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-07_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal7/")
 
@@ -425,7 +425,7 @@ arr8 = np.array([q22, q23, q24])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-08_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal8/")
 
@@ -468,7 +468,7 @@ arr9 = np.array([q25, q26, q27])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-09_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal9/")
 
@@ -510,7 +510,7 @@ arr10 = np.array([q28, q29, q30])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-10_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal10/")
 
@@ -552,7 +552,7 @@ arr11 = np.array([q31, q32, q33])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-11_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal11/")
 
@@ -596,7 +596,7 @@ arr12 = np.array([q34, q35, q36])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-12_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal12/")
 
@@ -638,7 +638,7 @@ arr13 = np.array([q37, q38, q39])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-13_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal13/")
 
@@ -675,7 +675,7 @@ arr14 = np.array([q40, q41, q42])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-14_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal14/")
 
@@ -714,7 +714,7 @@ st.write("(iii) Of all known animal species… 8% are already extinct and 22% ar
 q45 = st.slider('Rate this on a scale from 0 to 4', 0, 4, key="45")
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-15_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal15/")
 
@@ -761,7 +761,7 @@ arr16 = np.array([q46, q47, q48])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-16_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal16/")
 
@@ -801,7 +801,7 @@ arr17 = np.array([q49, q50, q51])
 
 
 with st.beta_expander("What are some of the ways to get involved?"):
-            st.write("""Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.""")
+            st.write("Please follow the link below to know some of the partnering organizations that are actively contributing to this goal.")
             st.image("https://www.sustainabilityexchange.ac.uk/images/e_sdg_goals_icons-individual-cmyk-17_resized.jpg",width=200)
             st.write("https://sustainabledevelopment.un.org/partnerships/goal17/")
 
