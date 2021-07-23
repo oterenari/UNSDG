@@ -44,13 +44,12 @@ import streamlit as st
 #     return r.json()
 
 # lottie_url = "https://assets9.lottiefiles.com/datafiles/dc49lw7cOTLEo6y/data.json"
+# st.write("Animation by Thomas Murray from www.lottiefiles.com")
 # lottie_json = load_lottieurl(lottie_url)
 
 # lottie_url2 = "https://assets2.lottiefiles.com/private_files/lf30_lyvbczgo.json"
+# st.write("Animation by Ryan Anzari from www.lottiefiles.com")
 # lottie_json2 = load_lottieurl(lottie_url2)
-
-# lottie_url3 = "https://assets9.lottiefiles.com/private_files/lf30_z1sghrbu.json"
-# lottie_json3 = load_lottieurl(lottie_url3)
 
 # data_df = pd.read_csv('https://raw.githubusercontent.com/oterenari/UNSDG/main/Data4.csv')
 
@@ -922,6 +921,7 @@ import streamlit as st
 #         st.write("16: Partnerships for the Goals")
 
         
+
 
 
 
